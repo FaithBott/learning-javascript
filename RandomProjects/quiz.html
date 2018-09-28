@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    </style>
+    <script>
+
+function submitButton()
+      {         
+var amountCorrect = 0;          
+for(var i = 1; i <= 10; i++) {
+  var radios = document.getElementsByName("color");
+  for(var j = 0; j < radios.length; j++) {
+    var radio = radios[j];
+    if(radio.value == "yes" && radio.checked) {
+      amountCorrect++;
+    }
+  }
+}                   
+        document.getElementById('score').innerHTML = "Score: " + amountCorrect;
+      } 
+    </script>
+</head>
+
+<body>
+    <h1>How Well Do You Know Me?</h1>
+    <fieldset style="background-color:red">
+        <h2>Question 1</h2>
+        <h2>What is my zodic sign?</h2>
+        <form>
+            <input type="radio" name="color" value="no"> Capricorn<br>
+            <input type="radio" name="color" value="no"> Aries<br>
+            <input type="radio" name="color" value="no"> Cancer<br>
+            <input type="radio" name="color" value="yes"> Virgo
+    </fieldset>
+    </form>
+    <fieldset style="background-color:orange">
+        <h2>Question 2</h2>
+        <h2>What is my favorite food?</h2>
+        <form>
+            <input type="radio" name="color" value="no" checked> Green Bean Casarole<br>
+            <input type="radio" name="color" value="yes"> Spaghetti and Meatballs<br>
+            <input type="radio" name="color" value="no"> Key Lime Pie<br>
+            <input type="radio" name="color" value="no"> Steak and Mashed Potatos
+    </fieldset>
+    </form>
+        <fieldset style="background-color:yellow">
+        <h2>Question 3</h2>
+        <h2>What is my favorite TV show?</h2>
+        <form>
+            <input type="radio" name="color" value="yes"> Glee<br>
+            <input type="radio" name="color" value="no"> Scandel<br>
+            <input type="radio" name="color" value="no"> Once Upon a Time<br>
+            <input type="radio" name="color" value="yes"> The Flash
+    </fieldset>
+    </form>
+    <fieldset style="background-color:greenyellow">
+        <h2>Question 4</h2>
+        <h2>If You Could Bring One Musician Back From The Dead, Who Would It Be?</h2>
+        <form>
+            <input type="radio" name="color" value="no" checked> Michael Jackson<br>
+            <input type="radio" name="color" value="yes"> Freddie Mercury<br>
+            <input type="radio" name="color" value="no"> Corey Monteith<br>
+            <input type="radio" name="color" value="no"> John Lennon
+    </fieldset>
+    </form>
+        <fieldset style="background-color:deepskyblue">
+        <h2>Question 5</h2>
+        <h2>What motivates me?</h2>
+        <form>
+            <input type="radio" name="color" value="no"> Competition<br>
+            <input type="radio" name="color" value="no"> Success <br>
+            <input type="radio" name="color" value="no"> Power<br>
+            <input type="radio" name="color" value="yes"> Happiness
+    </fieldset>
+    </form>
+    <fieldset style="background-color:mediumpurple">
+        <h2>Question 6</h2>
+        <h2>Who is my biggest role model?</h2>
+        <form>
+            <input type="radio" name="color" value="no" checked> Jeffree Star<br>
+            <input type="radio" name="color" value="yes"> Lea Michele<br>
+            <input type="radio" name="color" value="no"> ELon Musk<br>
+            <input type="radio" name="color" value="no"> Demi Lovato
+    </fieldset>
+    </form>
+        <fieldset style="background-color:hotpink">
+        <h2>Question 7</h2>
+        <h2>Who is my dream car?</h2>
+        <form>
+            <input type="radio" name="color" value="yes"> Mclaren 570S<br>
+            <input type="radio" name="color" value="no"> Tesla Model S<br>
+            <input type="radio" name="color" value="no"> lamborghini aventador<br>
+            <input type="radio" name="color" value="no"> Z06 Corvette
+    </fieldset>
+    </form>
+    <fieldset style="background-color:deeppink">
+        <h2>Question 8</h2>
+        <h2>Who is my favorite youtuber?</h2>
+        <form>
+            <input type="radio" name="color" value="no" checked> Nikkie Tutorials<br>
+            <input type="radio" name="color" value="yes"> Jeffree Star<br>
+            <input type="radio" name="color" value="no"> Glam and Gore<br>
+            <input type="radio" name="color" value="no"> James Charles 
+    </fieldset>
+    </form>
+        <fieldset style="background-color:red">
+        <h2>Question 9</h2>
+        <h2>The place I want to travel to the most is:</h2>
+        <form>
+            <input type="radio" name="color" value="no"> Skopelos, Greece<br>
+            <input type="radio" name="color" value="no"> Space<br>
+            <input type="radio" name="color" value="no"> 7 Wonders of the World<br>
+            <input type="radio" name="color" value="yes"> Eiffel Tower 
+    </fieldset>
+    </form>
+        <fieldset style="background-color:orange">
+        <h2>Question 10</h2>
+        <h2>What is my favorite color?</h2>
+        <form>
+            <input type="radio" name="color" value="no"> Baby Blue<br>
+            <input type="radio" name="color" value="no"> Black<br>
+            <input type="radio" name="color" value="yes"> Pastel Pink<br>
+            <input type="radio" name="color" value="no"> Lime Green
+    </fieldset>
+    </form>
+    <div id="score"></div>
+    <button onclick="submitButton()">Submit</button>
+</body>
+
+</html>
